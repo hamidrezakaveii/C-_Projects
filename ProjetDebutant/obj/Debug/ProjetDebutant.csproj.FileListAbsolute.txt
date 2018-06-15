@@ -1,0 +1,8 @@
+C:\Users\HAMIDREZA\Desktop\ProjetDebutant\obj\Debug\$safeprojectname$.Properties.Resources.resources
+C:\Users\HAMIDREZA\Desktop\ProjetDebutant\obj\Debug\ProjetDebutant.csproj.GenerateResource.Cache
+C:\Users\HAMIDREZA\Desktop\ProjetDebutant\obj\Debug\Demo_BasicProject.Form1.resources
+C:\Users\HAMIDREZA\Desktop\ProjetDebutant\bin\Debug\Demo_BasicProject.exe.config
+C:\Users\HAMIDREZA\Desktop\ProjetDebutant\bin\Debug\Demo_BasicProject.exe
+C:\Users\HAMIDREZA\Desktop\ProjetDebutant\bin\Debug\Demo_BasicProject.pdb
+C:\Users\HAMIDREZA\Desktop\ProjetDebutant\obj\Debug\Demo_BasicProject.exe
+C:\Users\HAMIDREZA\Desktop\ProjetDebutant\obj\Debug\Demo_BasicProject.pdb

@@ -1,0 +1,9 @@
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\obj\Debug\Demo_BasicProject.Form1.resources
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\obj\Debug\$safeprojectname$.Properties.Resources.resources
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\obj\Debug\ConvertisseurTemperature.csproj.GenerateResource.Cache
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\bin\Debug\Demo_BasicProject.exe.config
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\bin\Debug\Demo_BasicProject.exe
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\bin\Debug\Demo_BasicProject.pdb
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\obj\Debug\ConvertisseurTemperature.csprojResolveAssemblyReference.cache
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\obj\Debug\Demo_BasicProject.exe
+C:\Users\HAMIDREZA\Desktop\ConvertisseurTemperature\obj\Debug\Demo_BasicProject.pdb
