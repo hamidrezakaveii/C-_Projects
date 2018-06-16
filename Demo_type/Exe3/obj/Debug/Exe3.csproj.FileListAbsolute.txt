@@ -1,0 +1,5 @@
+c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\bin\Debug\Exe3.exe.config
+c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\bin\Debug\Exe3.exe
+c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\bin\Debug\Exe3.pdb
+c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\obj\Debug\Exe3.exe
+c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\obj\Debug\Exe3.pdb
