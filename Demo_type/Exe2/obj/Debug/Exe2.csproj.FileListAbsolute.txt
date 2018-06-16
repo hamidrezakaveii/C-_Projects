@@ -1,6 +1,0 @@
-c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe2\bin\Debug\Exe2.exe.config
-c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe2\bin\Debug\Exe2.exe
-c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe2\bin\Debug\Exe2.pdb
-c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe2\obj\Debug\Exe2.exe
-c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe2\obj\Debug\Exe2.pdb
-c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe2\obj\Debug\Exe2.csprojResolveAssemblyReference.cache
