@@ -12,17 +12,20 @@ namespace Exe2
         enum Semain { Lundi = 1, Mardi = 2, Mercedi = 3, Jedi = 4, Vendredi = 5, Samedi = 6, Dimanche = 7 };
         static void Main(string[] args)
         {
-            Console.WriteLine("Saisir le numero entre 1 et 7");
-            string strCase = (Console.ReadLine());
-            int myCase = int.Parse(strCase);
-            //2
-            //bool t = TryParse(strCase, out retour)
-            // if(t){}
-            //3
-            //Convert.ToInt32(strCase);
-
             //----------1 solution-----------------
-            /*switch(myCase){
+            /*Console.WriteLine("Entrer le numero entre 1 et 7");
+            string strCase = Console.ReadLine();
+            //int myCase = int.Parse(strCase);
+            //int myCase = Convert.ToInt32(strCase);
+            int myCase;
+            while(!(int.TryParse(strCase, out myCase)) || myCase < 1 || myCase > 7)
+            {
+                Console.WriteLine("Le numero est incorrect...");
+                Console.WriteLine("Entrer le numero entre 1 et 7");
+                strCase = Console.ReadLine();
+            }
+   
+            switch(myCase){
                 case 1:
                     Console.WriteLine("Lundi");
                     break;
@@ -47,15 +50,21 @@ namespace Exe2
                 default:
                     Console.WriteLine("Le nombre n'est pas valid");
                     break;
+            }
+            Console.ReadKey();*/
 
-            }*/
 
-            
-            
             //-------------2 solution---------------------
-            //Console.WriteLine(Enum.GetName(typeof(Semain), myCase));
+            /*Console.WriteLine("Entrer le numero entre 1 et 7");
+            string strCase = Console.ReadLine();
+            int myCase = int.Parse(strCase);
+            Console.WriteLine(Enum.GetName(typeof(Semain), myCase));
+            Console.ReadKey();*/
 
             //------------3 solution----------------------
+            Console.WriteLine("Entrer le numero entre 1 et 7");
+            string strCase = Console.ReadLine();
+            int myCase = int.Parse(strCase);
             Console.WriteLine("Le jour est:{0}",(Enum.GetName(typeof(DayOfWeek), myCase)));
             Console.ReadKey();
 
