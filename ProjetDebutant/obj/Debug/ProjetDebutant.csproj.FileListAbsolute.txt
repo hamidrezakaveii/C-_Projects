@@ -6,3 +6,6 @@ C:\Users\HAMIDREZA\Desktop\ProjetDebutant\bin\Debug\Demo_BasicProject.exe
 C:\Users\HAMIDREZA\Desktop\ProjetDebutant\bin\Debug\Demo_BasicProject.pdb
 C:\Users\HAMIDREZA\Desktop\ProjetDebutant\obj\Debug\Demo_BasicProject.exe
 C:\Users\HAMIDREZA\Desktop\ProjetDebutant\obj\Debug\Demo_BasicProject.pdb
+C:\Users\HAMIDREZA\Source\Repos\C-_Projects\ProjetDebutant\bin\Debug\Demo_BasicProject.exe.config
+C:\Users\HAMIDREZA\Source\Repos\C-_Projects\ProjetDebutant\obj\Debug\Demo_BasicProject.exe
+C:\Users\HAMIDREZA\Source\Repos\C-_Projects\ProjetDebutant\obj\Debug\Demo_BasicProject.pdb

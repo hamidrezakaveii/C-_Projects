@@ -3,3 +3,6 @@ c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\bin\Debug\
 c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\bin\Debug\Exe3.pdb
 c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\obj\Debug\Exe3.exe
 c:\users\1795545\documents\visual studio 2015\Projects\Demo_type\Exe3\obj\Debug\Exe3.pdb
+C:\Users\HAMIDREZA\Source\Repos\C-_Projects\Demo_type\Exe3\bin\Debug\Exe3.exe.config
+C:\Users\HAMIDREZA\Source\Repos\C-_Projects\Demo_type\Exe3\obj\Debug\Exe3.exe
+C:\Users\HAMIDREZA\Source\Repos\C-_Projects\Demo_type\Exe3\obj\Debug\Exe3.pdb
