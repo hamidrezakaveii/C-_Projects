@@ -10,20 +10,39 @@ namespace Exe7
     //{
         struct Facturette
         {
-            int no;
-            int nombre;
-            string nom;
-            double prix;
-            public Facturette(int no, int nombre, string nom, double prix)
+            private int qte;
+            private string nom;
+            private double prix;
+            public Facturette(int qte, string nom, double prix)
             {
-                this.no = no;
-                this.nombre = nombre;
+                this.qte = qte;
                 this.nom = nom;
                 this.prix = prix;
             }
-            public string ToString() {
+            // methodes
 
-            }  // methodes
-        }
+            public int Qte
+            {
+                get { return qte; }
+                set { qte = value; }
+            }
+            public string Nom
+            {
+                get { return nom; }
+                set { nom = value; }
+            }
+            public double Prix
+            {
+                get { return prix; }
+                set { prix = value; }
+            }
+
+            public override string ToString()
+            {
+            return "Item: "+nom+" Prix: "+prix+" Qte:"+qte;
+            }
+            
+            
+    }
     //}
 }
