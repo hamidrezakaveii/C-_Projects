@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Exe2
 {
@@ -13,6 +14,7 @@ namespace Exe2
         static void Main(string[] args)
         {
             //----------1 solution-----------------
+            //Using switch case
             /*Console.WriteLine("Entrer le numero entre 1 et 7");
             string strCase = Console.ReadLine();
             //int myCase = int.Parse(strCase);
@@ -55,6 +57,7 @@ namespace Exe2
 
 
             //-------------2 solution---------------------
+            //Using class enum
             /*Console.WriteLine("Entrer le numero entre 1 et 7");
             string strCase = Console.ReadLine();
             int myCase = int.Parse(strCase);
@@ -62,15 +65,19 @@ namespace Exe2
             Console.ReadKey();*/
 
             //------------3 solution----------------------
+            //Using DayOfWeek enum
             Console.WriteLine("Entrer le numero entre 1 et 7");
             string strCase = Console.ReadLine();
             int myCase = int.Parse(strCase);
-            Console.WriteLine("Le jour est:{0}",(Enum.GetName(typeof(DayOfWeek), myCase)));
-            Console.ReadKey();
+            Console.WriteLine("The day is: {0}",(Enum.GetName(typeof(DayOfWeek), myCase)));
+            
 
             //------------4 solution----------------------
-
-
+            //Using french language
+            DayOfWeek today = (DayOfWeek)myCase;
+            string aujour = DateTimeFormatInfo.CurrentInfo.GetDayName(today);
+            Console.WriteLine("Le jour est: {0}", aujour);
+            Console.ReadKey();
         }
     }
 }
