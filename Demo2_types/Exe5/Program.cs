@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe3
+
+namespace Exe5
 {
     class Program
     {
@@ -13,20 +14,22 @@ namespace Exe3
             //Variable declaration
             int nombre;
 
-            //Print the message to user for enter the number
-            Console.WriteLine("Entrer le nombre:");
+            //Print the message for user
+            Console.WriteLine("Entrer le nombre: ");
 
             //Check the user entry
-            while (!(int.TryParse(Console.ReadLine(), out nombre)) || nombre < 0)
+            while (!(int.TryParse(Console.ReadLine(), out nombre)) || nombre <= 0)
             {
                 Console.WriteLine("Errour de saisi, entrer le nombre: ");
             }
 
-            //Invoke the method carre for calculte the carre of (n)
-            MyUtili.carre(nombre);
+            //Invoking the method from Project Exe3
+            Exe3.MyUtili.TrouverPairImpair(nombre);
 
-            //Wait for the key before close the console
+            //Waiting for the key before close the console 
             Console.ReadKey();
+            
+
         }
     }
 }
