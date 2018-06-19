@@ -8,7 +8,7 @@ namespace Exe4
 {
     class MultipleOfFive
     {
-
+        //Static methode for print (n) multple of five 
         public static void MultiplierDeCinq(int nombre)
         {
             Console.WriteLine("Les {0} premiers multiples de 5 est:", nombre);
