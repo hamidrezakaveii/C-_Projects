@@ -32,9 +32,9 @@ namespace Exe1
         //override methode ToString()
         public override string ToString()
         {
-
-            Console.WriteLine("Item#: " + NomItem + " \nDescription: " + NomItem + " \nTaille: " + TailleItem + " \nPrix unitaire: " + PrixItem +" $");
-            return "";
+            string result="";
+            result += "Item#: " + NomItem + " \nDescription: " + NomItem + " \nTaille: " + TailleItem + " \nPrix unitaire: " + PrixItem +" $";
+            return result;
         }
         
     }
