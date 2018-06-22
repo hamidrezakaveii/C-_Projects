@@ -23,7 +23,7 @@ namespace Exe6
 
             //Print empty line
             Console.WriteLine();
-
+            
             //Print the message in case the user choose the vowel character
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch== 'u')
             {
