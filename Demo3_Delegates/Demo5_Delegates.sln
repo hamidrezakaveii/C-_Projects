@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipulation N2", "Manipula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipulation N3", "Manipulation N3\Manipulation N3.csproj", "{6D329AB8-57E0-4B16-BD4A-3868FE4D82DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App 1", "App 1\App 1.csproj", "{CFFCDF3B-ABEC-4E52-83E8-753B4E6CDBAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{6D329AB8-57E0-4B16-BD4A-3868FE4D82DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D329AB8-57E0-4B16-BD4A-3868FE4D82DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D329AB8-57E0-4B16-BD4A-3868FE4D82DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFCDF3B-ABEC-4E52-83E8-753B4E6CDBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFCDF3B-ABEC-4E52-83E8-753B4E6CDBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFCDF3B-ABEC-4E52-83E8-753B4E6CDBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFCDF3B-ABEC-4E52-83E8-753B4E6CDBAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
