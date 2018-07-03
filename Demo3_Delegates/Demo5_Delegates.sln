@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipulation N2", "Manipula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipulation N3", "Manipulation N3\Manipulation N3.csproj", "{6D329AB8-57E0-4B16-BD4A-3868FE4D82DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App 1", "App 1\App 1.csproj", "{CFFCDF3B-ABEC-4E52-83E8-753B4E6CDBAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateApp 1", "App 1\DelegateApp 1.csproj", "{CFFCDF3B-ABEC-4E52-83E8-753B4E6CDBAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
