@@ -20,13 +20,13 @@ namespace Demo_BasicProject
         private void cversf_Click(object sender, EventArgs e)
         {
             
-            textFar.Text = Utility.cversf(textCel.Text);
+            textFar.Text = Utility.cversf(textCel.Text.Trim());
         }
 
         private void fversc_Click(object sender, EventArgs e)
         {
             
-            textCel.Text = Utility.fversc(textFar.Text);
+            textCel.Text = Utility.fversc(textFar.Text.Trim());
 
         }
 

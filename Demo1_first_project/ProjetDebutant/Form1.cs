@@ -36,5 +36,15 @@ namespace Demo_BasicProject
         {
 
         }
+
+        private void openFileDialog_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void pictureImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

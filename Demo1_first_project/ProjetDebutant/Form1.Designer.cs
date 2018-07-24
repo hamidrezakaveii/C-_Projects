@@ -64,12 +64,14 @@
             this.pictureImage.Size = new System.Drawing.Size(420, 200);
             this.pictureImage.TabIndex = 2;
             this.pictureImage.TabStop = false;
+            this.pictureImage.Click += new System.EventHandler(this.pictureImage_Click);
             // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             this.openFileDialog.Filter = "Windows Bitmaps|*.BMP|JPEG Files|*.JPG|TIFF Files|*.TIFF|PNG Files|*.PNG";
             this.openFileDialog.Title = "Sélectionner une image";
+            this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_FileOk);
             // 
             // Form1
             // 
