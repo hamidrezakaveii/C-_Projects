@@ -15,7 +15,8 @@ namespace boutonuser_control_2015
         private int _mesure = 0;
         private int _valeur_Min = 0;
         private int _valeur_Max = 100;
-        
+        private int _nbr_division = 5;
+
 
 
         [Browsable(true), DefaultValue("0"), Description("represente la mesure ou la valeur a afficher"), DisplayName("Musure"), Category("Propriétés")]
@@ -62,7 +63,18 @@ namespace boutonuser_control_2015
             }
         }
 
-        public Color backgroundColor = Color.Red;
+        [Browsable(true), DefaultValue("5"), Description("represente la nombre division"), DisplayName("Nombre division"), Category("Propriétés")]
+        public int Nombre_Division
+        {
+            get { return this._nbr_division; }
+            set {
+                this._nbr_division = value;
+                Invalidate();
+            }
+            
+        }
+
+    public Color backgroundColor = Color.Red;
         //etape 2
         private string _labelBouton = "Click click";
         [Browsable(true), DefaultValue("Click click")]
@@ -145,19 +157,26 @@ namespace boutonuser_control_2015
             //e.Graphics.DrawRectangle(rec2Pen, rect2);
 
             //Draw lines
-            int pas = ((int)(this.Width * 0.05)) / 5;  //nbDiv
-            Pen blackPen2 = new Pen(Color.Black, 5);
-            for(int i = 0; i<5; i++)
+            int barValue = Valeur_Min;
+            int pas = rec3w / Nombre_Division;
+            SolidBrush barBrush = new SolidBrush(Color.Gray);
+            Pen lignePen = new Pen(Color.Black, 5);
+            Font strFont = new Font("Arial", 10);
+
+            for (int i = 0; i<=Nombre_Division ; i++)
             {
-                //graphics.DrawLine(blackPen2, rec2x, rec2y, rec2x, (int)(this.Height - 2 * (this.Height * 0.25)));
+                graphics.DrawString(barValue.ToString(), strFont, barBrush, rec3x + (i * pas), (rec3y - 30));
+                graphics.DrawLine(lignePen, rec3x + (i * pas), (rec3y - 10), rec3x + (i * pas), (rec3y + rec3h + 10));
+
+                barValue += Valeur_Max / Nombre_Division;
 
             }
 
             // Draw le bar
             SolidBrush musureBrush = new SolidBrush(Color.Red);
-            for (int i=0; i<Musure; i++)
+            for (int i=0; i < ((Musure - Valeur_Min) * rec3w) / (Valeur_Max - Valeur_Min); i++)
             {
-                graphics.FillRectangle(musureBrush, rec3x, (rec1h - 30) / 2, i, 30);
+            graphics.FillRectangle(musureBrush, rec3x, (rec1h - 30) / 2, i , 30);
                 //graphics.FillRectangle()
                 
                 Thread.Sleep(100);
