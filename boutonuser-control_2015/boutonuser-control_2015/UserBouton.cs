@@ -179,7 +179,7 @@ namespace boutonuser_control_2015
             graphics.FillRectangle(musureBrush, rec3x, (rec1h - 30) / 2, i , 30);
                 //graphics.FillRectangle()
                 
-                Thread.Sleep(100);
+                Thread.Sleep(50);
             }
 
 
