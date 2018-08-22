@@ -30,7 +30,7 @@ namespace Exe7
                 /*Console.Write("Item:{0}  ", desc);
                 Console.Write("Prix:{0}  ", prix);
                 Console.WriteLine("Qte:{0}  ", qte);*/
-                Console.WriteLine(fac[i]);
+                Console.WriteLine(fac[i]); 
             }
             Console.WriteLine("********************************************************************************");
             Console.WriteLine("Totale item achetes est:{0}  ", fac.Count);

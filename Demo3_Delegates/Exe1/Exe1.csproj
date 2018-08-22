@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="composantassembly">
-      <HintPath>..\..\..\..\..\..\..\Temp\composantassembly.dll</HintPath>
+      <HintPath>H:\E18T\420-819-BB gr.000229\documents\cours6_notion_composant\composantassembly.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

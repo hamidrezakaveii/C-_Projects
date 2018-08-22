@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.SelectionImage = new System.Windows.Forms.Button();
             this.quitterImage = new System.Windows.Forms.Button();
-            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.pictureImage = new System.Windows.Forms.PictureBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,9 +94,9 @@
 
         private System.Windows.Forms.Button SelectionImage;
         private System.Windows.Forms.Button quitterImage;
-        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
         private System.Windows.Forms.PictureBox pictureImage;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
     }
 }
 

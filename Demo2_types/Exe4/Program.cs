@@ -14,7 +14,7 @@ namespace Exe4
             int nombre;
 
             //Print the message for user
-            Console.WriteLine("Entrer le nombre: ");
+            Console.WriteLine("Entrer le nombre pour calculer les premiers multiples de 5: ");
 
             //Check the user entry
             while(!(int.TryParse(Console.ReadLine(), out nombre)) || nombre<=0)

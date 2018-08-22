@@ -14,7 +14,7 @@ namespace Exe3
             int nombre;
 
             //Print the message to user for enter the number
-            Console.WriteLine("Entrer le nombre:");
+            Console.WriteLine("Entrer le nombre pour calculer le carré :");
 
             //Check the user entry
             while (!(int.TryParse(Console.ReadLine(), out nombre)) || nombre < 0)

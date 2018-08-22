@@ -11,7 +11,7 @@ namespace Exe3
         //Static method for calculate the square of (n)
         public static void carre(int num) {
 
-            Console.WriteLine("Le carre de chiffre {0} est: "+num*num);
+            Console.WriteLine("Le carre de chiffre {0} est: {1} ",num ,(num*num));
         }
 
 

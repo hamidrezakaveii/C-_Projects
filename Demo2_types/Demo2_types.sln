@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe1", "Exe1\Exe1.csproj", "{78134ED2-7ECC-4D26-842C-C14D61B4370D}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe2", "Exe2\Exe2.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe3", "Exe3\Exe3.csproj", "{AD725DAB-0E82-4120-BFF8-A57AE236B36B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe7", "Exe7\Exe7.csproj", "{04031D6D-AD9B-4AA1-9A99-7716A10ADE4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe7_struct", "Exe7\Exe7_struct.csproj", "{04031D6D-AD9B-4AA1-9A99-7716A10ADE4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe4", "Exe4\Exe4.csproj", "{2A1FDF62-F8AF-42EE-BAE3-612EA414F885}"
 EndProject
@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe6", "Exe6\Exe6.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe8", "Exe8\Exe8.csproj", "{008D5E1D-637C-4216-87F5-DEBA4DEEBC5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe7_2", "Exe7_2\Exe7_2.csproj", "{5EAB5856-0CC3-4681-8BE5-E5A9EBA0F77B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exe7_2_struct", "Exe7_2\Exe7_2_struct.csproj", "{5EAB5856-0CC3-4681-8BE5-E5A9EBA0F77B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

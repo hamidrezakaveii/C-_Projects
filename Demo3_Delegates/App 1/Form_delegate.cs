@@ -65,7 +65,7 @@ namespace App_1
             if(cb_recherche.SelectedIndex != -1)
             {
                 tb_resultat.Clear();
-                listDelegates[cb_recherche.SelectedIndex]();
+                listDelegates[0]();
             }
         }
     }

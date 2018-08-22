@@ -37,17 +37,26 @@ namespace Exe1_2
             num.Add(10);
 
 
+
             List<int> res = new List<int>();
+            //res = Util.Decouvrir(num, registre[0]);
 
-            res = Util.Decouvrir(num, registre[0]);
-
-
-            foreach (int i in res)
+            foreach (afficherDelegate af in registre)
             {
+                
+                res = Util.Decouvrir(num, af);
 
-                Console.WriteLine(i);
+                foreach (int i in res)
+                {
 
-            }
+                    Console.WriteLine(i);
+
+                }
+            } 
+            
+
+
+
 
             Console.ReadKey();
 
@@ -56,7 +65,7 @@ namespace Exe1_2
 
 
 
-        class Util
+        private class Util
         {
 
             public static List<int> Decouvrir(List<int> num, afficherDelegate ad)
