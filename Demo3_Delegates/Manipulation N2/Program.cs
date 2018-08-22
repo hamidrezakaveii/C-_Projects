@@ -14,6 +14,7 @@ namespace Manipulation_N2
         {
             //instantiate delegate
             delegateAdvance myDelegate = new delegateAdvance(methodeDelegateProduct);
+            //delegateAdvance myDelegate = methodeDelegateProduct;
 
             //invoke delegate
             Console.WriteLine("the result is: {0:f2}",myDelegate(10.0, 4));

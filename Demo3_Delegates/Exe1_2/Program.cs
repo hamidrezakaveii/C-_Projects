@@ -46,12 +46,12 @@ namespace Exe1_2
                 
                 res = Util.Decouvrir(num, af);
 
-                foreach (int i in res)
-                {
+                            foreach (int i in res)
+            {
 
-                    Console.WriteLine(i);
+                Console.WriteLine(i);
 
-                }
+            }
             } 
             
 
