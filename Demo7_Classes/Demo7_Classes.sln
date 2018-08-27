@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipulation_1", "Demo7_Classes\Manipulation_1.csproj", "{041E3ACD-B807-4893-B562-4A7D5C5893A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipulation_2", "Manipulation_2\Manipulation_2.csproj", "{438D2E7B-1A25-4EFB-A5D0-0F6F57DE2AE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipulation_3", "Manipulation_3\Manipulation_3.csproj", "{918980C3-B757-4BE3-925F-8644265A9063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipulation_4", "Manipulation_4\Manipulation_4.csproj", "{2E89F1B9-35C2-45B8-ABB5-26C86B567F40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{438D2E7B-1A25-4EFB-A5D0-0F6F57DE2AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{438D2E7B-1A25-4EFB-A5D0-0F6F57DE2AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{438D2E7B-1A25-4EFB-A5D0-0F6F57DE2AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918980C3-B757-4BE3-925F-8644265A9063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918980C3-B757-4BE3-925F-8644265A9063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918980C3-B757-4BE3-925F-8644265A9063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918980C3-B757-4BE3-925F-8644265A9063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E89F1B9-35C2-45B8-ABB5-26C86B567F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E89F1B9-35C2-45B8-ABB5-26C86B567F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E89F1B9-35C2-45B8-ABB5-26C86B567F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E89F1B9-35C2-45B8-ABB5-26C86B567F40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
