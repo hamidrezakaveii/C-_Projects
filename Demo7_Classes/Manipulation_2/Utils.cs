@@ -28,10 +28,10 @@ namespace Manipulation_2
 
         public static void modifierCode(Employe emp)
         {
-             
-            if (emp.code.IndexOf('.').Equals('A'))
+
+            if (emp.code.ToUpper().StartsWith("A") || emp.code.ToUpper().StartsWith("B") || emp.code.ToUpper().StartsWith("M") || emp.code.ToUpper().StartsWith("F"))
             {
-                emp.code += "AXD";
+                emp.code = emp.code + "AXD";
             }
         }
     }
