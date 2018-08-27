@@ -24,7 +24,7 @@ namespace Manipulation_4
             personne.Prenom = "Hami";
             personne.Code = "123";
 
-            personne.
+            personne
         }
     }
 }
