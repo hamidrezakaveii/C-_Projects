@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "UserBouton";
-            this.Size = new System.Drawing.Size(442, 182);
+            this.Size = new System.Drawing.Size(169, 453);
             this.ResumeLayout(false);
 
         }
