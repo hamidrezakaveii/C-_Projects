@@ -1,4 +1,4 @@
-﻿namespace Preparation_Intra
+﻿namespace Intra_Preparation
 {
     partial class Form1
     {
