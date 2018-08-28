@@ -12,7 +12,7 @@ namespace Demo8_ADOOracle
         {
             string cs =
                         "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)" +
-                        "(HOST = oracleadudb1.bdeb.qc.ca)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = GDNA10) ));" +
+                        "(HOST = oracleadudb1.bdeb.qc.ca)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = GDNA10)));" +
                   "User Id=UG235E29;Password=P342k8;";
             OracleConnection connection = new OracleConnection();
             connection.ConnectionString = cs;
@@ -23,7 +23,7 @@ namespace Demo8_ADOOracle
                 connection.Open();
 
                 //creer une requete 
-                string query = "SELECT last_name, first_name from employees";
+                string query = "SELECT LASTNAME, FIRSTNAME from EMPLOYEES";
 
                 //Preparer l'execution de la requete 
                 OracleCommand sql = new OracleCommand();

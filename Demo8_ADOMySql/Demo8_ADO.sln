@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo8_SQLite", "Demo8_SQLit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo8_SQLServer", "Demo8_SQLServer\Demo8_SQLServer.csproj", "{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo8_ADOOracle_Graphic", "Demo8_ADOOracle_Graphic\Demo8_ADOOracle_Graphic.csproj", "{B0316F53-E7C5-43C0-8CBD-A52D91CE7B8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0316F53-E7C5-43C0-8CBD-A52D91CE7B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0316F53-E7C5-43C0-8CBD-A52D91CE7B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0316F53-E7C5-43C0-8CBD-A52D91CE7B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0316F53-E7C5-43C0-8CBD-A52D91CE7B8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
