@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo8_ADOMySql", "Demo8_ADO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo8_ADOOracle", "Demo8_ADOOracle\Demo8_ADOOracle.csproj", "{8B1BFB95-86CB-4DD5-AD1B-B07BBA8969EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo8_SQLite", "Demo8_SQLite\Demo8_SQLite.csproj", "{DC9E8C2E-5548-4C1A-B5FF-5DCBE6D61DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo8_SQLServer", "Demo8_SQLServer\Demo8_SQLServer.csproj", "{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +25,19 @@ Global
 		{8B1BFB95-86CB-4DD5-AD1B-B07BBA8969EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B1BFB95-86CB-4DD5-AD1B-B07BBA8969EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B1BFB95-86CB-4DD5-AD1B-B07BBA8969EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9E8C2E-5548-4C1A-B5FF-5DCBE6D61DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9E8C2E-5548-4C1A-B5FF-5DCBE6D61DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9E8C2E-5548-4C1A-B5FF-5DCBE6D61DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9E8C2E-5548-4C1A-B5FF-5DCBE6D61DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7E6952-3DAB-4AFC-AA4F-122E639599C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6C31596-C4E1-4D0D-B308-485F73AC7A8E}
 	EndGlobalSection
 EndGlobal
