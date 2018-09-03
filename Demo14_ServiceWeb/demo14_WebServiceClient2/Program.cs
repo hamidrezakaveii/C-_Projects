@@ -11,7 +11,8 @@ namespace demo14_WebServiceClient2
     {
         static void Main(string[] args)
         {
-            WebService1SoapClient proxy = new WebService1SoapClient();
+            Service1SoapClient proxy = new Service1SoapClient();
+            
 
             double resultat = proxy.CalculSoustraction(56, 3);
             Console.WriteLine("resultat est :" + resultat);

@@ -96,24 +96,24 @@ namespace demo14_WebServiceClient2.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WebService1SoapClient : System.ServiceModel.ClientBase<demo14_WebServiceClient2.ServiceReference1.WebService1Soap>, demo14_WebServiceClient2.ServiceReference1.WebService1Soap {
+    public partial class Service1SoapClient : System.ServiceModel.ClientBase<demo14_WebServiceClient2.ServiceReference1.WebService1Soap>, demo14_WebServiceClient2.ServiceReference1.WebService1Soap {
         
-        public WebService1SoapClient() {
+        public Service1SoapClient() {
         }
         
-        public WebService1SoapClient(string endpointConfigurationName) : 
+        public Service1SoapClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public WebService1SoapClient(string endpointConfigurationName, string remoteAddress) : 
+        public Service1SoapClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public WebService1SoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Service1SoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public WebService1SoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Service1SoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
