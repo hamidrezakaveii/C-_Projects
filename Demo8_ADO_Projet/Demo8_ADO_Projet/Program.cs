@@ -16,7 +16,9 @@ namespace Demo8_ADO_Projet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Locataire());
+            //Application.Run(new Bail());
+            Application.Run(new MainForm());
         }
     }
 }

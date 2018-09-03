@@ -11,11 +11,13 @@ using System.Windows.Forms;
 
 namespace Demo8_ADO_Projet
 {
-    public partial class Form1 : Form
+    public partial class Locataire : Form
     {
-        public Form1()
+        MainForm mf;
+        public Locataire(MainForm mf)
         {
             InitializeComponent();
+            this.mf = mf;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -85,6 +87,11 @@ namespace Demo8_ADO_Projet
         private void buttonQuitter_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Locataire_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            mf.Show();
         }
     }
 }

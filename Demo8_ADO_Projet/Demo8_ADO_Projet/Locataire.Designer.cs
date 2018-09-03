@@ -1,6 +1,6 @@
 ﻿namespace Demo8_ADO_Projet
 {
-    partial class Form1
+    partial class Locataire
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -239,7 +239,7 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Code";
             // 
-            // Form1
+            // Locataire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -249,9 +249,9 @@
             this.Controls.Add(this.buttonEffacer);
             this.Controls.Add(this.buttonQuitter);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "Locataire";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Locataire_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hamidBDDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
