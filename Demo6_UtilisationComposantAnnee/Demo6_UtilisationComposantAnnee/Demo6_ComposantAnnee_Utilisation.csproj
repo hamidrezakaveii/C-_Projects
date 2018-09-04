@@ -34,7 +34,7 @@
   <ItemGroup>
     <Reference Include="Demo6_ComposantAnnee, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Demo6_ComposantAnnee\Demo6_ComposantAnnee\bin\Debug\Demo6_ComposantAnnee.dll</HintPath>
+      <HintPath>bin\Debug\Demo6_ComposantAnnee.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
