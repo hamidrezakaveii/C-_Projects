@@ -55,12 +55,77 @@ namespace Demo9_LinqToObjects
             //var employe3 = from data in employes select new { data._nom, data._prenom };
             var employe3 = employes.Select(Employe => new { Employe._nom, Employe._prenom });
 
-            AffichageDonnees(employe3, "");
+            //AffichageDonnees(employe3, "");
 
             /////////////////////////////////////////////////////////////////////////////////
             //Exe 9.3
 
+
+
+
+            ////////////////////////////////////////////////////////////
+            //Exe 9.4
+
             var models = new List<Model>();
+            models.Add(new Model("London", "UK", 35000));
+            models.Add(new Model("Paris", "France", 25000));
+            models.Add(new Model("Lagos", "Nigeria", 45000));
+            models.Add(new Model("Rome", "Italie", 15000));
+            models.Add(new Model("New York", "USA", 125000));
+            models.Add(new Model("Chicago", "USA", 105000));
+            models.Add(new Model("Oslo", "Norvege", 5000));
+            models.Add(new Model("Boston", "USA", 45000));
+            models.Add(new Model("Baltimore", "USA", 65000));
+            models.Add(new Model("Accra", "Ghana", 25000));
+            models.Add(new Model("Milan", "Italie", 15000));
+
+            var personnes = new List<Personne>();
+            personnes.Add(new Personne("Bill", "Tages", "New York"));
+            personnes.Add(new Personne("Olanjo", "Bobard", "Lagos"));
+            personnes.Add(new Personne("Alain", "FlouFlou", "Boston"));
+            personnes.Add(new Personne("Wate", "Kinslet", "Paris"));
+            personnes.Add(new Personne("Loria", "Soren", "Rome"));
+            personnes.Add(new Personne("Tamar", "Kuhl", "Chicago"));
+            personnes.Add(new Personne("Romeo", "Unede", "Accra"));
+            personnes.Add(new Personne("Simur", "Tarsen", "Oslo"));
+            personnes.Add(new Personne("Rudici", "Miluci", "Milan"));
+            personnes.Add(new Personne("Bill", "Thorsen", "New York"));
+            personnes.Add(new Personne("Avanti", "Sage", "Rome"));
+            personnes.Add(new Personne("Billio", "Mustardi", "Rome"));
+            personnes.Add(new Personne("Cameo", "Donadi", "Rome"));
+
+            //1.	Afficher le nom des villes ainsi que les personnes qui y vivent.
+
+            Console.WriteLine("Afficher le nom des villes ainsi que les personnes qui y vivent");
+            var query1 = models.Join(personnes, Model => Model.Ville, Personne => Personne.Ville, (Model, Personne) => new { models = Model, personnes = Personne }).Select(u => new { u.models.Ville, u.personnes.Nom, u.personnes.Prenom });
+            AffichageDonnees(query1, "");
+            Console.WriteLine("====================================================================");
+
+            //2.	Afficher le nom de toutes les personnes ainsi que les pays où ils vivent.
+
+            Console.WriteLine("Afficher le nom de toutes les personnes ainsi que les pays où ils vivent.");
+            var query2 = personnes.Join(models, Personne => Personne.Ville, Model => Model.Ville, (Personne, Model) => new { personnes = Personne, models = Model }).Select(u => new { u.personnes.Nom, u.personnes.Prenom, u.models.Pays });
+            AffichageDonnees(query2, "");
+            Console.WriteLine("====================================================================");
+
+            //3.	Afficher toutes les personnes qui vivent à Rome (nom, prénom).
+
+            Console.WriteLine("3.	Afficher toutes les personnes qui vivent à Rome (nom, prénom).");
+            var query3 = personnes.Where(Personne => (Personne.Ville == "Rome")).Select(r => new { r.Nom, r.Prenom });
+            AffichageDonnees(query3, "");
+            Console.WriteLine("====================================================================");
+
+            //4.	Afficher toutes les villes où il y’a plus de 2 personnes qui y vivent.
+
+            Console.WriteLine("4.	Afficher toutes les villes où il y’a plus de 2 personnes qui y vivent.");
+            var query4 = personnes.GroupBy(Personne => Personne.Ville ).Select(r => new { City = r.Key, cityCount = r.Count() }).Where(g => g.cityCount >= 2);
+            AffichageDonnees(query4, "");
+            Console.WriteLine("====================================================================");
+
+
+
+
+
 
 
 
@@ -72,5 +137,8 @@ namespace Demo9_LinqToObjects
                 Console.WriteLine(item);
             }
         }
+
+
+
     }
 }
