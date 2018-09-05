@@ -10,8 +10,14 @@ namespace Demo9_LinqToObjects
     {
         static void Main(string[] args)
         {
-
+            ////////////////////////////////////////////////////////////////////////////
+            //Exe 9.1
             int[] valeurs = { 2, 9, 5, 0, 3, 7, 1, 4, 8, 5 };
+
+
+            //a.Trouver toutes les valeurs qui sont supérieures à 4 et les afficher.
+            //b.Trouver toutes les valeurs qui sont supérieures à 4 et les afficher par ordre croissant
+            //c.Trouver toutes les valeurs qui sont supérieures à 4 et les afficher par ordre décroissant
 
             var valeur = from data in valeurs
                          where data > 4
@@ -34,7 +40,12 @@ namespace Demo9_LinqToObjects
             employes.Add(emp3);
             employes.Add(emp4);
             employes.Add(emp5);
-            //Exe 9.2 a et b
+
+
+            //a.	Trouver tous les employés qui font entre 4000 et 6000 par mois.
+            //b.Lister les employés par ordre croissant de nom et prénom
+            
+            //var employe = employes.Where(Employe => Employe._salaire > 4000 && Employe._salaire < 6000).OrderByDescending(Employe => Employe._nom).ThenBy(Employe => Employe._prenom).Select(Employe => Employe);
             var employe = from data in employes
                           where (data._salaire > 4000) && (data._salaire < 6000)
                           orderby data._nom, data._prenom ascending
@@ -42,16 +53,16 @@ namespace Demo9_LinqToObjects
 
             //AffichageDonnees(employe, "");
 
-            //var employe2 = (from data in employes
-            //               select data._nom).Distinct();
 
-            //9.2 c
-            //var employe2 = employes.Where(Employe => Employe._salaire > 4000 && Employe._salaire < 6000).OrderByDescending(Employe => Employe._nom).ThenBy(Employe => Employe._prenom).Select(Employe => Employe); 
+
+            //c.	Trouver tous les noms distincts des employés
+
+            //var employe2 = (from data in employes select data._nom).Distinct();
             var employe2 = employes.Select(Employe => Employe._nom).Distinct();
 
             //AffichageDonnees(employe2, "");
 
-            //Exe 9.2 d
+            //d.	Lister tous les employés (nom et prénom) en utilisant des objets de type anonyme
             //var employe3 = from data in employes select new { data._nom, data._prenom };
             var employe3 = employes.Select(Employe => new { Employe._nom, Employe._prenom });
 
@@ -63,7 +74,7 @@ namespace Demo9_LinqToObjects
 
 
 
-            ////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////
             //Exe 9.4
 
             var models = new List<Model>();
