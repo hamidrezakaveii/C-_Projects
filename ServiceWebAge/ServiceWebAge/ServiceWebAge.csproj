@@ -69,9 +69,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="WebServiceAgeActivity.asmx" />
+    <Content Include="WebServiceDataBase.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebServiceAgeActivity.asmx.cs">
+      <DependentUpon>WebServiceAgeActivity.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServiceDataBase.asmx.cs">
+      <DependentUpon>WebServiceDataBase.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
