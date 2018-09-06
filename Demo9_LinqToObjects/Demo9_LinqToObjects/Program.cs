@@ -44,7 +44,7 @@ namespace Demo9_LinqToObjects
 
             //a.	Trouver tous les employés qui font entre 4000 et 6000 par mois.
             //b.Lister les employés par ordre croissant de nom et prénom
-            
+
             //var employe = employes.Where(Employe => Employe._salaire > 4000 && Employe._salaire < 6000).OrderByDescending(Employe => Employe._nom).ThenBy(Employe => Employe._prenom).Select(Employe => Employe);
             var employe = from data in employes
                           where (data._salaire > 4000) && (data._salaire < 6000)
@@ -129,18 +129,45 @@ namespace Demo9_LinqToObjects
             //4.	Afficher toutes les villes où il y’a plus de 2 personnes qui y vivent.
 
             Console.WriteLine("4.	Afficher toutes les villes où il y’a plus de 2 personnes qui y vivent.");
-            var query4 = personnes.GroupBy(Personne => Personne.Ville ).Select(r => new { City = r.Key, cityCount = r.Count() }).Where(g => g.cityCount >= 2);
+            var query4 = personnes.GroupBy(Personne => Personne.Ville).Select(r => new { City = r.Key, cityCount = r.Count() }).Where(g => g.cityCount >= 2);
             AffichageDonnees(query4, "");
             Console.WriteLine("====================================================================");
 
 
+            ////////////////////////////////////////////////////////////////////////////////
+            //a.Trouver tous les produits qui ont le prix compris entre 0$ et 234$.
+            var listProduit = new List<Produit>();
 
+            listProduit.Add(new Produit("Bnb11", "Bonbon", 0.5));
+            listProduit.Add(new Produit("Pai22", "Pain", 1.75));
+            listProduit.Add(new Produit("Stl45", "Stylo", 1.5));
+            listProduit.Add(new Produit("Tv78", "Television", 700.77));
+            listProduit.Add(new Produit("Tbl97", "Table", 200.0));
+            listProduit.Add(new Produit("Frc12", "Fourchette", 2.0));
+
+
+            var pr1 = from data in listProduit
+                      where (data.prix >= 0.0 && data.prix <= 234.0) 
+                         orderby data 
+                         select data;
+
+            //AffichageDonnees(pr1, "");
+            //afficher(pr1);
 
 
 
 
 
         }
+
+        private static void afficher(IEnumerable<Produit> resultat)
+        {
+            foreach (var item in resultat)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
         public static void AffichageDonnees<T>(IEnumerable<T> resultat, string texte)
         {
             foreach (var item in resultat)
@@ -149,7 +176,10 @@ namespace Demo9_LinqToObjects
             }
         }
 
+      
 
 
-    }
+
+
+}
 }
