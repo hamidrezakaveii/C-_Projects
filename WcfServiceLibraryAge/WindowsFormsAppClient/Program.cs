@@ -19,12 +19,6 @@ namespace WindowsFormsAppClient
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            Service1Client client = new Service1Client("BasicHttpBinding_IService1");
-
-            DateTime dt = new DateTime();
-
-            string msg = client.MessageAnneChoisir("","","",dt, 1980);
-
 
 
         }

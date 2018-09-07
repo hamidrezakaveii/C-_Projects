@@ -18,7 +18,7 @@ namespace WCfServiceLibraryAgeMessage
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         [OperationContract]
-        string MessageAnneChoisir(string machineName, string machinIP, string username, DateTime dateTime, int anne);
+        string MessageAnneChoisir(string machineName, string machinIP, string username, DateTime dateTime, DateTime anne);
     }
 
     // Utilisez un contrat de données comme indiqué dans l'exemple ci-après pour ajouter les types composites aux opérations de service.

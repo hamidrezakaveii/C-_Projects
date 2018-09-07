@@ -91,10 +91,10 @@ namespace WindowsFormsAppClient.ServiceReference1 {
         System.Threading.Tasks.Task<WindowsFormsAppClient.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(WindowsFormsAppClient.ServiceReference1.CompositeType composite);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/MessageAnneChoisir", ReplyAction="http://tempuri.org/IService1/MessageAnneChoisirResponse")]
-        string MessageAnneChoisir(string machineName, string machinIP, string username, System.DateTime dateTime, int anne);
+        string MessageAnneChoisir(string machineName, string machinIP, string username, System.DateTime dateTime, System.DateTime anne);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/MessageAnneChoisir", ReplyAction="http://tempuri.org/IService1/MessageAnneChoisirResponse")]
-        System.Threading.Tasks.Task<string> MessageAnneChoisirAsync(string machineName, string machinIP, string username, System.DateTime dateTime, int anne);
+        System.Threading.Tasks.Task<string> MessageAnneChoisirAsync(string machineName, string machinIP, string username, System.DateTime dateTime, System.DateTime anne);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -140,11 +140,11 @@ namespace WindowsFormsAppClient.ServiceReference1 {
             return base.Channel.GetDataUsingDataContractAsync(composite);
         }
         
-        public string MessageAnneChoisir(string machineName, string machinIP, string username, System.DateTime dateTime, int anne) {
+        public string MessageAnneChoisir(string machineName, string machinIP, string username, System.DateTime dateTime, System.DateTime anne) {
             return base.Channel.MessageAnneChoisir(machineName, machinIP, username, dateTime, anne);
         }
         
-        public System.Threading.Tasks.Task<string> MessageAnneChoisirAsync(string machineName, string machinIP, string username, System.DateTime dateTime, int anne) {
+        public System.Threading.Tasks.Task<string> MessageAnneChoisirAsync(string machineName, string machinIP, string username, System.DateTime dateTime, System.DateTime anne) {
             return base.Channel.MessageAnneChoisirAsync(machineName, machinIP, username, dateTime, anne);
         }
     }

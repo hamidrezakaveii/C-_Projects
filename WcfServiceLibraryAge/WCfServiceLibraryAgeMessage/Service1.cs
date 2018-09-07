@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -28,7 +29,7 @@ namespace WCfServiceLibraryAgeMessage
             return composite;
         }
 
-        public string MessageAnneChoisir(string machineName, string machinIP, string username, DateTime dateTime, int anne)
+        public string MessageAnneChoisir(string machineName, string machinIP, string username, DateTime dateTime, DateTime anne)
         {
             String messagee = "";
 
@@ -36,32 +37,35 @@ namespace WCfServiceLibraryAgeMessage
             {
 
 
-                if (1970 < anne)
+                if (1970 >= anne.Year)
                 {
                     messagee = "Il est temps d’aller se promener à travers le monde";
-
                 }
-                else if (1971 <= anne && anne >= 1980)
+                if (1971 >= anne.Year && anne.Year <= 1980)
                 {
                     messagee = "il est temps de commencer à travailler sérieusement";
                 }
-                else if (1981 <= anne && anne >= 1990)
+                if (1981 >= anne.Year && anne.Year <= 1990)
                 {
                     messagee = "Il est grand temps de terminer tes études";
                 }
-                else if (1991 <= anne && anne >= 2000)
+                if (1991 >= anne.Year && anne.Year <= 2000)
                 {
                     messagee = "Fais ce qui te plait, tu as encore le temps!";
                 }
-                else if (2001 <= anne && anne >= 2010)
+                if (2001 >= anne.Year && anne.Year <= 2010)
                 {
                     messagee = "utilisation de ce service non-autorisée !!!";
+                }
+                else
+                {
+                    messagee = "Pas de defini!!!";
                 }
 
             }
             catch (Exception ex)
             {
-                //WebServiceDataBase wsgr = new WebServiceDataBase();
+                Console.WriteLine(ex);
 
             }
             finally
@@ -69,9 +73,29 @@ namespace WCfServiceLibraryAgeMessage
                 
             }
 
+            InseretDonnes(machineName, machinIP, username, dateTime, anne);
             
 
             return messagee;
+        }
+
+        private void InseretDonnes(string machineName, string machinIP, string username, DateTime dateTime, DateTime anne)
+        {
+            //insert
+            using (SqlConnection connection =
+              new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\1795545\\Documents\\LogServiceDB.mdf;Integrated Security=True;Connect Timeout=30"))
+            {
+                SqlCommand command =
+                    new SqlCommand("INSERT INTO ActivityLOG(machine_name, machine_ip, user_name, curr_date, birth_date) " +
+                                   "VALUES('" + machineName + "', '" + machinIP + "', '" + username + "', '" + dateTime + "', '"+ anne +"');"
+,
+                                   connection);
+                connection.Open();
+                command.ExecuteNonQuery();
+
+
+            }
+
         }
     }
 }
