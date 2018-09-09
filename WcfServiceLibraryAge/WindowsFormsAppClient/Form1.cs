@@ -24,32 +24,31 @@ namespace WindowsFormsAppClient
 
         private void buttonEnvoyer_Click(object sender, EventArgs e)
         {
-
-            //string machineName, string machinIP, string username, DateTime dateTime, int anne
+            richTextBoxResultat.Text = "";
             
+            //Get the user infos
             string machineName = Environment.MachineName;
             string machineIP = Dns.GetHostAddresses(machineName)[0].ToString();
             //string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\')[1];
             string username = Environment.UserName;
 
-
-
-
+            //Access to service
             Service1Client client = new Service1Client("BasicHttpBinding_IService1");
 
-
+            //Get the user date
             DateTime dtNaissance = DateTime.Parse(textBoxDateNaissance.Text);
 
+            //Get current date
             DateTime dtCurrent = DateTime.Now;
 
+            //Invoke the sevice method
             string msg = client.MessageAnneChoisir(machineName, machineIP, username, dtCurrent, dtNaissance);
 
-
+            //Set the message to rich text box
             richTextBoxResultat.Text += msg ;
-            //richTextBoxResultat.Text += machineName+"***";
-            //richTextBoxResultat.Text += machineIP+"***";
-            //richTextBoxResultat.Text += username+"***";
 
+            Console.WriteLine(dtCurrent);
+            Console.WriteLine(dtNaissance);
 
 
         }
@@ -103,7 +102,7 @@ namespace WindowsFormsAppClient
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-
+            monthCalendar1.Visible = true;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -114,6 +113,16 @@ namespace WindowsFormsAppClient
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            monthCalendar1.Visible = false;
+        }
+
+        private void textBoxDateNaissance_Click(object sender, EventArgs e)
+        {
+            monthCalendar1.Visible = true;
         }
     }
 }

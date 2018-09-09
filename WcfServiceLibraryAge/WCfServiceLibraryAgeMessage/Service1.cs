@@ -32,34 +32,31 @@ namespace WCfServiceLibraryAgeMessage
         public string MessageAnneChoisir(string machineName, string machinIP, string username, DateTime dateTime, DateTime anne)
         {
             String messagee = "";
-
             try
             {
-
-
                 if (1970 >= anne.Year)
                 {
                     messagee = "Il est temps d’aller se promener à travers le monde";
                 }
-                if (1971 >= anne.Year && anne.Year <= 1980)
+                else if (1971 >= anne.Year && anne.Year <= 1980)
                 {
                     messagee = "il est temps de commencer à travailler sérieusement";
                 }
-                if (1981 >= anne.Year && anne.Year <= 1990)
+                else if (1981 >= anne.Year && anne.Year <= 1990)
                 {
                     messagee = "Il est grand temps de terminer tes études";
                 }
-                if (1991 >= anne.Year && anne.Year <= 2000)
+                else if (1991 >= anne.Year && anne.Year <= 2000)
                 {
                     messagee = "Fais ce qui te plait, tu as encore le temps!";
                 }
-                if (2001 >= anne.Year && anne.Year <= 2010)
+                else if (2001 >= anne.Year && anne.Year <= 2010)
                 {
                     messagee = "utilisation de ce service non-autorisée !!!";
                 }
                 else
                 {
-                    messagee = "Pas de defini!!!";
+                    messagee = "Pas de defini !!!";
                 }
 
             }
@@ -83,17 +80,27 @@ namespace WCfServiceLibraryAgeMessage
         {
             //insert
             using (SqlConnection connection =
-              new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\1795545\\Documents\\LogServiceDB.mdf;Integrated Security=True;Connect Timeout=30"))
+              new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\HAMIDREZA\\Documents\\LogServiceDB.mdf;Integrated Security=True;Connect Timeout=30"))
             {
-                SqlCommand command =
-                    new SqlCommand("INSERT INTO ActivityLOG(machine_name, machine_ip, user_name, curr_date, birth_date) " +
-                                   "VALUES('" + machineName + "', '" + machinIP + "', '" + username + "', '" + dateTime + "', '"+ anne +"');"
-,
-                                   connection);
                 connection.Open();
-                command.ExecuteNonQuery();
+                using (SqlCommand command =
+                    new SqlCommand("INSERT INTO ActivityLOG(machine_name, machine_ip, user_name, curr_date, birth_date) " +
+                                   "VALUES('" + machineName + "', '" + machinIP + "', '" + username + "', '" + dateTime + "', '" + anne + "');", connection))
+                {
+                    try
+                    {
+
+                        command.ExecuteNonQuery();
+                        command.CommandTimeout = 1000;
+                        connection.Close();
+                    }
+                    catch (System.Data.SqlClient.SqlException sqlException)
+                    {
+                        Console.WriteLine(sqlException.Message);
+                    }
 
 
+                }
             }
 
         }

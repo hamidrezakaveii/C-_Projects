@@ -33,6 +33,7 @@
             this.richTextBoxResultat = new System.Windows.Forms.RichTextBox();
             this.textBoxDateNaissance = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonEnvoyer
@@ -50,9 +51,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.Size = new System.Drawing.Size(104, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Date de Naissance:";
+            this.label2.Text = "Date de Naissance :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // richTextBoxResultat
@@ -70,6 +71,7 @@
             this.textBoxDateNaissance.Name = "textBoxDateNaissance";
             this.textBoxDateNaissance.Size = new System.Drawing.Size(227, 20);
             this.textBoxDateNaissance.TabIndex = 5;
+            this.textBoxDateNaissance.Click += new System.EventHandler(this.textBoxDateNaissance_Click);
             this.textBoxDateNaissance.TextChanged += new System.EventHandler(this.textBoxAnne_TextChanged);
             this.textBoxDateNaissance.Enter += new System.EventHandler(this.textBoxAnne_Enter);
             this.textBoxDateNaissance.Leave += new System.EventHandler(this.textBoxDateNaissance_Leave);
@@ -82,11 +84,21 @@
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 216);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Message :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 301);
+            this.ClientSize = new System.Drawing.Size(465, 268);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.richTextBoxResultat);
             this.Controls.Add(this.textBoxDateNaissance);
@@ -95,6 +107,7 @@
             this.Name = "Form1";
             this.Text = "Affiche Activity";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,6 +120,7 @@
         private System.Windows.Forms.RichTextBox richTextBoxResultat;
         private System.Windows.Forms.TextBox textBoxDateNaissance;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
